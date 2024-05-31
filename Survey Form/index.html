@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Your responses are confidential and will be used for research purposes.
+    </p>
+    <form id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">
+                Name:
+                <input placeholder="Enter your name" id="name" type="text" required aria-label="Name" />
+            </label>
+
+            <label for="email" id="email-label">
+                Email:
+                <input placeholder="Enter your email" id="email" type="email" required aria-label="Email" />
+            </label>
+
+            <label for="number" id="number-label">
+                Age (years):
+                <input placeholder="Enter your age" id="number" type="number" min="10" max="120" aria-label="Age" />
+            </label>
+
+            <label for="dropdown">
+                Which option best describes your current role?
+                <select id="dropdown" aria-label="Current role">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Full-time job</option>
+                    <option>Full-time learner</option>
+                    <option>Other</option>
+                </select>
+            </label>
+
+            <label>Would you recommend us to a friend?</label>
+            <div>
+                <label for="yes">
+                    <input id="yes" type="radio" name="recommend" value="yes" class="inline" checked aria-label="Yes" />
+                    Yes
+                </label>
+                <label for="no">
+                    <input id="no" type="radio" name="recommend" value="no" class="inline" aria-label="No" /> No
+                </label>
+            </div>
+
+            <label>Which services do you use?</label>
+            <div>
+                <label for="telegram">
+                    <input class="inline" id="telegram" type="checkbox" name="service" value="telegram" aria-label="Telegram" /> Telegram
+                </label>
+                <label for="facebook">
+                    <input class="inline" id="facebook" type="checkbox" name="service" value="facebook" aria-label="Facebook" /> Facebook
+                </label>
+                <label for="whatsapp">
+                    <input class="inline" id="whatsapp" type="checkbox" name="service" value="whatsapp" aria-label="WhatsApp" /> WhatsApp
+                </label>
+                <label for="instagram">
+                    <input class="inline" id="instagram" type="checkbox" name="service" value="instagram" aria-label="Instagram" /> Instagram
+                </label>
+                <label for="linkedin">
+                    <input class="inline" id="linkedin" type="checkbox" name="service" value="linkedin" aria-label="LinkedIn" /> LinkedIn
+                </label>
+                <label for="twitter">
+                    <input class="inline" id="twitter" type="checkbox" name="service" value="twitter" aria-label="Twitter" /> Twitter
+                </label>
+            </div>
+
+            <label for="comment">
+                Any comments or suggestions?
+                <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Give us feedback :)"
+                    aria-label="Comments or suggestions"></textarea>
+            </label>
+
+            <p id="thank-you-description">
+                Thank you for your participation!
+            </p>
+
+            <input id="submit" type="submit" value="Submit" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
